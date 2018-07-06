@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="avatar_option">
+        <item>更换头像</item>
+        <item>查看大头像</item>
+    </string-array>
+</resources>

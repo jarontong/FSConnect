@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3498db</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#a9a9a9</color>
+    <color name="bg_press">#ebebeb</color>
+    <color name="actionbar_background">@color/colorPrimaryDark</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="green">#008000</color>
+
+    <color name="window_background">#f2f2f2</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="main_black">#333</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="list_divider_color">#c8c7cc</color>
+
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+
+    <!-- 反馈 -->
+
+    <!-- 日历dialog -->
+    <color name="blue">#338fcc</color>
+
+    <!--  created by  fei -->
+    <color name="user_info_message_notice">#E35B5A</color>
+
+    <!-- 新版登录模块-->
+    <color name="login_input_active">@color/colorPrimary</color>
+    <color name="account_input_bg_color">#33ffffff</color>
+    <color name="account_lock_bg">#7089e2</color>
+    <color name="account_lock_font_color">#d3d9de</color>
+    <color name="account_pressed_true">@color/colorPrimaryDark</color>
+
+    <color name="bg_press_material">#d4d4d4</color>
+
+
+    <color name="image_back_demo">#f6f6f6</color>
+    <color name="text_btn">#ffffff</color>
+</resources>

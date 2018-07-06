@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_20">20.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_12">12.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_8">8.0dip</dimen>
+    <dimen name="space_5">5.0dip</dimen>
+    <dimen name="space_4">4.0dip</dimen>
+    <dimen name="space_2">2.0dip</dimen>
+
+    <!-- 意见反馈 -->
+
+    <!-- 时间选择dialog -->
+
+    <!--toast y offset  官方默认是64dip-->
+    <dimen name="toast_y_offset">35dp</dimen>
+
+
+</resources>

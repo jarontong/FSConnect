@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.jaron.fsconnectparent.activities.NoticeActivity">
+    <FrameLayout
+        android:id="@+id/setting_head_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_navigation_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_login_navigation_bar"
+            android:contentDescription="@null"
+            app:srcCompat="@mipmap/btn_back_normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="通知"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/add_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center"
+            android:gravity="center"
+            android:paddingEnd="20dp"
+            android:text="添加"
+            android:visibility="gone"
+            android:clickable="false"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingBottom="@dimen/lay_48"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jaron.fsconnectparent.widget.RecyclerRefreshLayout
+            android:id="@+id/lay_refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lay_blog_detail_notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry" />
+        </com.jaron.fsconnectparent.widget.RecyclerRefreshLayout>
+        
+    </FrameLayout>
+
+</LinearLayout>

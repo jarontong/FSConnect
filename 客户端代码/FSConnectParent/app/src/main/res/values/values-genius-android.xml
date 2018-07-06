@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_alpha_240">#f0000000</color>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="lay_16">16dp</dimen>
+    <dimen name="lay_48">48dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+</resources>

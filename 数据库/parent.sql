@@ -1,0 +1,1 @@
+INSERT INTO `parent`(`parent_id`, `parent_telephone`, `parent_username`, `parent_password`, `parent_truename`, `sex`, `head_icon`, `student_id`) VALUES (8, '13867101467', '张二', '12345678', '张二', NULL, NULL, 1);

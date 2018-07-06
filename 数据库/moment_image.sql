@@ -1,0 +1,2 @@
+INSERT INTO `moment_image`(`moment_image_id`, `moments_id`, `moment_image_path`) VALUES (13, 13, 'http://172.20.10.2:8080/server-ssm/upload/moment/momentImage/2018/5/20180619000237498Screenshot_20180618-225448.png');
+INSERT INTO `moment_image`(`moment_image_id`, `moments_id`, `moment_image_path`) VALUES (14, 13, 'http://172.20.10.2:8080/server-ssm/upload/moment/momentImage/2018/5/20180619000237498Screenshot_20180618-220003.png');

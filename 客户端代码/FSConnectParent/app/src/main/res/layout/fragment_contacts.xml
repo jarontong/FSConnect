@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/setting_head_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="联系人"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/add_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center"
+            android:gravity="center"
+            android:paddingEnd="20dp"
+            android:src="@drawable/ic_add_more"
+            />
+
+    </FrameLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/btnPublicGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/group"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:text="群聊" />
+    </LinearLayout>
+    <View
+        style="@style/h_line"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <ListView
+        android:id="@+id/groupList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000" />
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_friendList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <!--<com.czy.ui.common.LetterIndexView
+        android:id="@+id/liv_letters"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />-->
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:background="@drawable/text_view_hint_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="45sp"
+        android:visibility="gone" />
+
+</LinearLayout>
+    </LinearLayout>

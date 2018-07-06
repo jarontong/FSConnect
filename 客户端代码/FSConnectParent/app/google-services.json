@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "393386591057",
+    "firebase_url": "https://fsconnect-3eb10.firebaseio.com",
+    "project_id": "fsconnect-3eb10",
+    "storage_bucket": "fsconnect-3eb10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393386591057:android:527784aba8f08e87",
+        "android_client_info": {
+          "package_name": "com.jaron.fsconnectparent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393386591057-2k8ssbm275s2165n62a0en7crfudinva.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "393386591057-2k8ssbm275s2165n62a0en7crfudinva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmT0kvslpUPsihAyCQFA2yV3oGlYHCgUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+INSERT INTO `student`(`student_id`, `student_num`, `student_name`, `student_sex`, `class_id`, `responsible_parent`, `responsible_parent_telephone`) VALUES (1, '201426810520', '张四', '男', 1, '张二', '13867101467');
+INSERT INTO `student`(`student_id`, `student_num`, `student_name`, `student_sex`, `class_id`, `responsible_parent`, `responsible_parent_telephone`) VALUES (2, '201426810521', '王杰', '男', 1, '王五', '18745213254');
+INSERT INTO `student`(`student_id`, `student_num`, `student_name`, `student_sex`, `class_id`, `responsible_parent`, `responsible_parent_telephone`) VALUES (3, '201426810522', '李四', '男', 1, '李六', '18256978541');
+INSERT INTO `student`(`student_id`, `student_num`, `student_name`, `student_sex`, `class_id`, `responsible_parent`, `responsible_parent_telephone`) VALUES (4, '201426810523', '李梅', '女', 1, '李三', '18256987412');
+INSERT INTO `student`(`student_id`, `student_num`, `student_name`, `student_sex`, `class_id`, `responsible_parent`, `responsible_parent_telephone`) VALUES (5, '201426810524', '张三', '男', 1, '张一', '18245575412');

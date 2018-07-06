@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/setting_head_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_navigation_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_login_navigation_bar"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作业详情"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/homework_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center|end" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_touch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/account_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="时间："
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:id="@+id/homework_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:hint="2018-07-25 10:20"
+                    android:paddingEnd="@dimen/space_10"
+                    android:paddingStart="@dimen/space_10"
+                    android:textSize="@dimen/font_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="班级："
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:id="@+id/homework_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:hint="一班"
+                    android:paddingEnd="@dimen/space_10"
+                    android:paddingStart="@dimen/space_10"
+                    android:textSize="@dimen/font_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="科目："
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:id="@+id/homework_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:hint="aa"
+                    android:paddingEnd="@dimen/space_10"
+                    android:paddingStart="@dimen/space_10"
+                    android:textSize="@dimen/font_20" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="内容："
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:id="@+id/homework_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:hint="aa"
+                    android:paddingEnd="@dimen/space_10"
+                    android:paddingStart="@dimen/space_10"
+                    android:textSize="@dimen/font_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="附件："
+                    android:textSize="@dimen/font_20" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/homework_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:overScrollMode="never"
+                    android:paddingEnd="@dimen/space_10"
+                    android:paddingStart="@dimen/space_10" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

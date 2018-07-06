@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/setting_head_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_navigation_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_login_navigation_bar"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加作业"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/notice_add_complete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_login_navigation_bar"
+            android:contentDescription="@null"
+            android:layout_gravity="end"
+            app:srcCompat="@mipmap/btn_enter_normal"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_touch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/account_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="班级:"
+                    android:textSize="@dimen/size_20" />
+
+                <Spinner
+                    android:id="@+id/spinner_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="学科:"
+                    android:textSize="@dimen/size_20" />
+
+                <Spinner
+                    android:id="@+id/spinner_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/homework_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/homework_content_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="@dimen/space_5"
+                        android:layout_marginEnd="@dimen/space_10"
+                        android:layout_marginStart="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:gravity="top|start"
+                        android:hint="作业内容:"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:paddingEnd="@dimen/space_10"
+                        android:paddingStart="@dimen/space_10"
+                        android:textSize="@dimen/text_size_20" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:paddingStart="@dimen/space_10"
+                    android:text="附件："
+                    android:textSize="@dimen/font_20" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/homework_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingEnd="@dimen/space_10"
+                    android:paddingStart="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_weight="1"
+                    android:paddingEnd="@dimen/space_10"
+                    android:paddingStart="@dimen/space_10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc" />
+
+                <Button
+                    android:id="@+id/btnVoice"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_session_btn_voice_normal"
+                    android:text="按住 说话"
+                    android:textColor="#7e7e7e" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

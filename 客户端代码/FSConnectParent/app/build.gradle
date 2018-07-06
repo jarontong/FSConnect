@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.jaron.fsconnectparent"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            multiDexEnabled true
+            minifyEnabled true
+            //移除无用的资源文件
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    compile 'com.android.support:design:27.0.2'
+    compile project(':library')
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.android.support:support-annotations:27.0.2'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.8'
+    compile 'cz.msebera.android:httpclient:4.3.6'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.4.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    compile 'com.lqr.audio:library:1.0.0'
+    compile 'com.google.firebase:firebase-core:15.0.0'
+    compile 'com.google.firebase:firebase-messaging:15.0.0'
+    compile project(':ui')
+}
+apply plugin: 'com.google.gms.google-services'

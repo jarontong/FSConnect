@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/setting_head_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_navigation_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_login_navigation_bar"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请假单"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/leave_add_complete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_login_navigation_bar"
+            android:contentDescription="@null"
+            android:layout_gravity="end"
+            app:srcCompat="@mipmap/btn_enter_normal"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_touch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/account_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="开始时间:"
+                    android:textSize="@dimen/size_20" />
+
+                <Button
+                    android:id="@+id/button_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:background="@color/white"
+                    android:hint="请选择时间"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="@dimen/space_2"
+                android:paddingTop="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="截止时间:"
+                    android:textSize="@dimen/size_20" />
+
+                <Button
+                    android:id="@+id/button_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_15"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:background="@color/white"
+                    android:hint="请选择时间"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="@dimen/space_2"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginStart="20dp"
+                    android:text="请假原因:"
+                    android:textSize="@dimen/size_20" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/reson_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/reson"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="@dimen/space_5"
+                        android:layout_marginEnd="@dimen/space_10"
+                        android:layout_marginStart="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:gravity="top|start"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:paddingEnd="@dimen/space_10"
+                        android:paddingStart="@dimen/space_10"
+                        android:textSize="@dimen/text_size_20" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
